@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合示例页面</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .image-caption {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        .text-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>综合示例页面</h1>
+
+    <section>
+        <h2>1. 图片插入示例</h2>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x400" alt="示例图片">
+            <div class="image-caption">图1: 这是一个示例图片的说明文字</div>
+        </div>
+
+        <p>在HTML中，我们使用&lt;img&gt;标签来插入图片。主要属性包括：</p>
+        <ul>
+            <li><strong>src</strong>: 指定图片的路径或URL</li>
+            <li><strong>alt</strong>: 为图片提供替代文本，对可访问性很重要</li>
+            <li><strong>width</strong>和<strong>height</strong>: 可以设置图片的显示尺寸</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>2. 表格创建示例</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>项目名称</th>
+                    <th>描述</th>
+                    <th>数量</th>
+                    <th>单价</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>HTML教程</td>
+                    <td>基础HTML学习资料</td>
+                    <td>2</td>
+                    <td>¥50.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>CSS指南</td>
+                    <td>样式设计参考手册</td>
+                    <td>1</td>
+                    <td>¥75.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>JavaScript高级编程</td>
+                    <td>深入理解JavaScript</td>
+                    <td>3</td>
+                    <td>¥120.00</td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;"><strong>总计：</strong></td>
+                    <td><strong>¥485.00</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="text-section">
+            <p>HTML表格使用&lt;table&gt;标签创建，包含以下主要元素：</p>
+            <ul>
+                <li>&lt;thead&gt;: 定义表格的标题部分</li>
+                <li>&lt;tbody&gt;: 定义表格的主体内容</li>
+                <li>&lt;tr&gt;: 定义表格行</li>
+                <li>&lt;th&gt;: 定义表头单元格</li>
+                <li>&lt;td&gt;: 定义标准单元格</li>
+            </ul>
+            <p>可以使用<em>colspan</em>和<em>rowspan</em>属性来合并单元格。</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. 文字说明示例</h2>
+
+        <div class="text-section">
+            <h3>HTML基础介绍</h3>
+            <p>HTML（超文本标记语言）是构建网页的标准标记语言。它描述了网页的结构，由一系列元素组成，这些元素告诉浏览器如何显示内容。</p>
+            <p>HTML元素通过标签表示，通常成对出现，如&lt;p&gt;和&lt;/p&gt;。标签可以包含属性，提供有关元素的附加信息。</p>
+        </div>
+
+        <div class="text-section">
+            <h3>网页设计原则</h3>
+            <p>良好的网页设计应考虑以下原则：</p>
+            <ol>
+                <li><strong>可用性</strong>: 确保所有用户都能轻松使用网站</li>
+                <li><strong>响应式设计</strong>: 适配不同设备屏幕尺寸</li>
+                <li><strong>视觉层次</strong>: 通过排版和布局引导用户注意力</li>
+                <li><strong>一致性</strong>: 保持整个网站的设计风格统一</li>
+                <li><strong>加载速度</strong>: 优化资源确保快速加载</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #ddd;">
+        <p>© 2023 示例页面. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
